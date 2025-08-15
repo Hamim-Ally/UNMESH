@@ -544,11 +544,19 @@ grid
   .knsl-grid-sizer,
   .knsl-masonry-grid-item {
     width: 50% !important; } }
+
+    .row-md-reverse {
+  display: flex;
+  flex-direction: unset;
+  }
 @media (max-width: 768px) {
   /* line 484, ../scss/_common.scss */
   .knsl-grid-sizer,
   .knsl-masonry-grid-item {
     width: 100% !important; } }
+  
+
+
 /***************************
 
 section transitions
@@ -882,6 +890,10 @@ top bar
   .knsl-top-bar .container .knsl-right-side {
     width: auto; } }
 @media (max-width: 992px) {
+  .row-md-reverse {
+  display: flex;           /* Ensure it's flex */
+  flex-direction: column-reverse; /* Reverse the row */
+  }
   /* line 160, ../scss/_frame.scss */
   .mb-text-center{text-align: center;}
   .knsl-top-bar {
