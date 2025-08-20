@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /unmesh/
+
+# Send everything to index.php unless it’s a real file/folder
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
