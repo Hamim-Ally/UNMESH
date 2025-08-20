@@ -25,7 +25,7 @@
         <div class="knsl-copyright">
             <div class="container">
                 <div class="copy-text">
-                    <div>Copyright © 2025 UNMESH Consulting</div>
+                    <div>Copyright © <?php echo date('Y');?> UNMESH Consulting</div>
                 </div>
             </div>
         </div>

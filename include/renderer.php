@@ -40,8 +40,8 @@ function renderNavbar(string $basePath, string $currentPage): void
     <div class="container">
     <div class="knsl-left-side">
     <!-- logo -->
-    <a target="_blank" href="' . $basePath . '" class="knsl-logo-frame">
-    <img src="' . $basePath . '/img/icons/logo.jpg" style="width: 48px !important; margin-right: 14px;">
+    <a target="_blank" href="'.$basePath.'" class="knsl-logo-frame">
+    <img src="'.$basePath.'/img/icons/logo.jpg" style="width: 48px !important; margin-right: 14px;">
     <h2>UNMESH</h2>
     </a>
     <!-- logo end -->
@@ -96,3 +96,86 @@ function renderBannerSection(string $title, string $subtitle, array $breadcrumbs
     </div>
     </section>';
 }
+
+function renderServicesSection($basePath): void
+{
+    echo <<<HTML
+    <!-- team -->
+    <section class="knsl-p-100-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="knsl-center knsl-title-frame knsl-mb-100">
+                        <h2 class="knsl-mb-20">Our Services</h2>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a target="_blank" href="{$basePath}/service/1">
+                        <div class="knsl-team-card">
+                            <div class="knsl-photo-frame">
+                                <img src="img/services/0.jpg" alt="face">
+                            </div>
+                            <div class="knsl-team-member-descr">
+                                <h4 class="knsl-mb-10">Life Cycle Assessment (LCA) & Environmental Product
+                                    Declarations (EPDs)</h4>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a target="_blank" href="{$basePath}/service/2">
+                        <div class="knsl-team-card">
+                            <div class="knsl-photo-frame">
+                                <img src="img/services/7.jpg" alt="face">
+                            </div>
+                            <div class="knsl-team-member-descr">
+                                <h4 class="knsl-mb-10">GHG Accounting & Carbon Footprinting<br><br><br></h4>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a target="_blank" href="{$basePath}/service/3">
+                        <div class="knsl-team-card">
+                            <div class="knsl-photo-frame">
+                                <img src="img\services\8.jpg" alt="face">
+                            </div>
+                            <div class="knsl-team-member-descr">
+                                <h4 class="knsl-mb-10">Industrial Hygiene & Occupational Health <br><br><br>
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+
+                    <a target="_blank" href="{$basePath}/service/4">
+                        <div class="knsl-team-card">
+                            <div class="knsl-photo-frame">
+                                <img src="img/services/9.jpeg" alt="face">
+                            </div>
+                            <div class="knsl-team-member-descr">
+                                <h4 class="knsl-mb-10">Our Engineering-Led Industrial Hygiene Services<br><br>
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team end -->
+    HTML;
+}
+

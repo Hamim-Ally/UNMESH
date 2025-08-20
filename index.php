@@ -61,7 +61,7 @@ $router = new Router(BasePath); // Set base path if needed
                     '#ECFAFB'
                 );
 
-                include 'components/service.php';
+                renderServicesSection(BasePath);
                 include 'components/approach.php';
                 include 'components/footer.php';
             });
@@ -137,7 +137,7 @@ $router = new Router(BasePath); // Set base path if needed
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4">
-                                <a target="_blank" href="'. BasePath .'/service/2">
+                                <a target="_blank" href="' . BasePath . '/service/2">
                                     <div class="knsl-team-card">
                                         <div class="knsl-photo-frame">
                                             <img src="' . BasePath . '/img/services/7.jpg" alt="face">
@@ -152,7 +152,7 @@ $router = new Router(BasePath); // Set base path if needed
                             </div>
 
                             <div class="col-12 col-md-6 col-lg-4">
-                                <a target="_blank" href="'. BasePath .'/service/3">
+                                <a target="_blank" href="' . BasePath . '/service/3">
                                     <div class="knsl-team-card">
                                         <div class="knsl-photo-frame">
                                             <img src="' . BasePath . '/img/services/8.jpg" alt="face">
@@ -167,7 +167,7 @@ $router = new Router(BasePath); // Set base path if needed
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
 
-                                <a target="_blank" href="'. BasePath .'/service/4">
+                                <a target="_blank" href="' . BasePath . '/service/4">
                                     <div class="knsl-team-card">
                                         <div class="knsl-photo-frame">
                                             <img src="' . BasePath . '/img/services/9.jpeg" alt="face">
